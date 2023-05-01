@@ -36,4 +36,15 @@ UPDATE student_table SET marks="98" WHERE id = "2";
 
 TRUNCATE TABLE student_table;
 
+create table orders(order_num int,purchase_amount int, 
+order_date date, customer_id int, salesman_id int
+);
+
+select * from orders;
+INSERT INTO orders VALUES(12,1200,'2023-04-28',302,200),
+(13,1000,'2023-04-29',303,205),(15,1300,'2023-04-30',304,210);
+
+select * from orders where not (order_date="2023-04-30") and (salesman_id
+>202 or purchase_amount>1000);
+
 
