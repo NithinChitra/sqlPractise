@@ -47,4 +47,8 @@ INSERT INTO orders VALUES(12,1200,'2023-04-28',302,200),
 select * from orders where not (order_date="2023-04-30") and (salesman_id
 >202 or purchase_amount>1000);
 
+select * from salesman;
+select * from salesman where name like "P%";
+
+
 
